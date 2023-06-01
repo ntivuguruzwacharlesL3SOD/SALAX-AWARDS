@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prisoner Form</title>
+  <link rel="stylesheet" type="text/css" href="detainees.css">
+</head>
+<h1>add a new prisoner</h1>
+<body>
+  <div class="container">
+    <img src="../images/abstract-user-flat-1.svg" width="200px" height="250px" id="prisonerPhoto">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="crime">Crime:</label>
+      <input type="text" id="crime" name="crime" required>
+
+      <label for="sentence">Sentence:</label>
+      <input type="text" id="sentence" name="sentence" required>
+
+      <label for="date">Date of Arrest:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="officer">Arresting Officer:</label>
+      <input type="text" id="officer" name="officer" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prisoners</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #666;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>List of Prisoners</h1>
+  <table>
+    <tr>
+      <th>Prisoner ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Date of Birth</th>
+      <th>Address</th>
+      <th>Offense</th>
+      <th>Sentence Length</th>
+      <th>Release Date</th>
+      <th>Picture</th>
+    </tr>
+  </table>
+  <input type="file" id="file" style="display: none;">
+  <script>
+    const form = document.querySelector('form');
+    const prisonerPhoto = document.querySelector('#prisonerPhoto');
+    const file = document.querySelector('#file');
+    const table = document.querySelector('table');
+    let index = 0
+    prisonerPhoto.onclick = () => {
+      file.click()
+    }
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // prevent the form from submitting normally
+
+      // get the values of the form inputs
+      const name = document.querySelector('#name').value;
+      const age = document.querySelector('#age').value;
+      const crime = document.querySelector('#crime').value;
+      const sentence = document.querySelector('#sentence').value;
+      const date = document.querySelector('#date').value;
+      const officer = document.querySelector('#officer').value;
+      index++
+      if (index < 10) {
+        index = `00${index}`
+      }
+      if (index < 100 && index > 10) {
+        index = `0${index}`
+
+      }
+      // create a new row in the table with the form input values
+      const row = table.insertRow(-1);
+      row.innerHTML = `
+          <td>${index}</td>
+          <td>${name}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>${crime}</td>
+          <td>${sentence}</td>
+          <td></td>
+          <td><img src="${prisonerPhoto.src}" height="100"></td>
+        `;
+
+      // clear the form inputs for the next entry
+      form.reset();
+      prisonerPhoto.src = '../images/abstract-user-flat-1.svg'
+    });
+
+    file.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const contents = event.target.result;
+        prisonerPhoto.src = contents
+      };
+
+      reader.readAsDataURL(file);
+    });
+
+  </script>
+</body>
+
+</html>

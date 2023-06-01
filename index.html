@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="icon" href="./4.jfif">
+    <style>
+        body{
+            background-color:  rgb(15, 7, 7);
+        }
+        h1{
+            color: red;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        span{
+            color: darkcyan;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+         #star{
+            font-size: 30px;
+            color: yellow;
+        }
+        #you{
+            font-size: 30px;
+        }
+       /* #fb{
+            font-size: 30px;
+            color: blue;
+        }
+        #ig{
+            font-size: 30px;
+            color: hotpink;
+        }
+        #twi{
+            font-size: 30px;
+            color: darkcyan;
+        }
+        #tube{
+            font-size: 30px;
+            color: red;
+        } */
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            top: 10%;
+        }
+        ul li{
+            float: right;
+            background-color:  rgb(74, 33, 4);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            opacity: .8;
+            font-size: 20px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: orange;
+        }
+        ul li a:hover{
+            background-color: green;
+        }
+        ul li ul li{
+            text-decoration: none;
+            background-color: darkcyan;
+            
+        }
+        ul li ul li:hover{
+            background-color: grey;
+            color: gold;
+            color: crimson;
+        }
+        ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+
+p{
+    color: rgb(31, 245, 27);
+    text-transform: uppercase;
+}
+fieldset{
+    background: rgb(237, 192, 192);
+    border: none;
+    border: none;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+h3{
+  color: rgb(20, 56, 56);
+  text-transform: uppercase;
+}
+.view{
+    width: 600px;
+    height: 600px;
+    /* border: 1px solid ; */
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    width: 600px;
+    height: 600px;
+    transition: .7s ease-in-out;
+    border-radius: 6px;
+}
+
+#slider{
+    display: flex;
+    width: 2400px;
+    height: 600px;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+.slide1{
+    width: 600px;
+    height: 600px;
+}
+.slide2{
+    width: 600px;
+    height: 600px;
+}
+.slide3{
+    width: 600px;
+    height: 600px;
+}
+.slide4{
+    width: 600px;
+    height: 600px;
+}
+
+.content{
+    text-align: center;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.logo{
+    width: 200px;
+    border-radius: 50%;
+    transition: 0.8s;
+}
+.logo:hover{
+    transform: scale(1.1);
+    opacity: .7;
+}
+button{
+    position: absolute;
+    top: 60%;
+    left: 83%;
+    border-radius: 50%;
+}
+p{
+    position: absolute;
+    top: 94%;
+    left: 83%;
+    text-align: center;
+}
+i{
+    color: red;
+}
+b{
+    color: yellow;
+}
+    </style>
+</head>
+<body>
+    <div id="you">
+        <h1>SALAX<span><i class="fa-sharp fa-solid fa-star" id="star"></i><br> &nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;AWARDS</span></h1>
+    </div>
+    <ul>
+        <li><a href="" onclick="alert('FIRST SIGN IN PLEASE !!!')"><i class="fa-solid fa-users fa-bounce" style="color: #bb0a7a;"></i>ABOUT US</a>
+        <ul>
+            <li><a href="" onclick="alert('FIRST SIGN IN PLEASE !!!')">SERVICES</a></li>
+            <li><a href="" onclick="alert('FIRST SIGN IN PLEASE !!!')">SOCIAL MEDIA</a></li>
+            <li><a href="" onclick="alert('FIRST SIGN IN PLEASE !!!')">HELP ?</a></li>
+        </ul>
+        </li>
+        <li><a href=""><i class="fa-solid fa-door-open fa-beat" style="color: #bb0a7a;"></i>ACCOUNTS</a>
+        <ul>
+            <li><a href="login.HTML">LOG IN</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        </ul>
+        </li>
+        <li><a href="" onclick="alert('FIRST SIGN IN PLEASE !!!')"><i class="fa-solid fa-image fa-fade" style="color: #bb0a7a;"></i>GALLERY</a></li>
+        <li><a href="" onclick="alert('FIRST SIGN IN PLEASE !!!')"><i class="fa-solid fa-palette fa-beat" style="color: #bb0a7a;"></i>ARTS</a></li>
+    </ul>
+    <fieldset>
+        <h3> The purpose of the Salax awards is to recognize by excellence without limitations
+            or restrictions all Rwandan talented artists and entertainers. The award winners range from well-known and established 
+            artists to under-recognized talented people (Music, Authors, Actors and Athletes) after considering their annual performances.
+    
+            Ikirezi Group started Salax Awards in order to give respect and encouragement to the Rwandan artists and entertainers.
+            
+            The awards were inspired by different international events such as MTV Awards, Grammy Awards, BET Awards and Oscar Awards after 
+            recognizing that Rwanda has got serious talented artists in various disciplines.</h3>
+        </fieldset>
+<div class="view">
+    <div id="slider">
+        <div class="slides slide1" id="slide">
+            <img src="./4.jfif" width="600px" height="600px">
+        </div>
+        <div class="slides slide2" id="slide">
+            <img src="./5.jfif" width="600px" height="600px">
+        </div>
+        <div class="slides slide3" id="slide">
+            <img src="./voting.png" width="600px" height="600px">
+        </div>
+        <div class="" id="slide">
+            <img src="./art.jfif" width="600px" height="600px">
+        </div>
+    </div>
+</div>
+<button>
+<img src="LOGO.png" alt="" class="logo">
+</button>
+<p><i>IMPOWERING YOU ARTS</i> <br> & <br><b>TALENT</b></p>
+<script>
+    const myslider = [...document.querySelectorAll("#slide")]
+let pos = 0
+console.log(myslider);
+// function move(e) {
+//     (e.key == 'ArrowLeft') ? pos -= 600 :
+    
+// }
+setInterval(e => {
+    pos -= 600
+    if (pos < -1800) {
+        pos = 0
+    }
+    myslider.forEach(slider => {
+        slider.style.transform = `translateX(${pos}px)`
+    })
+}, 5000)
+</script>
+</body>
+</html>

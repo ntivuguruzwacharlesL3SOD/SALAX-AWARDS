@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <style>
+        body{
+            background-color: rgb(15, 7, 7);
+        }
+        fieldset{
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: fixed;
+            border-color: lawngreen;
+        }
+        legend{
+            color: lawngreen;
+            font-size: 20px;
+;    
+        }
+        input{
+            padding: 18px;
+            outline: none;
+            color: orangered;
+            border-radius: 10px;
+            background-color: rgba(125, 188, 9, 0.26);
+            font-size: 18px;
+        }
+        .btn{
+            width: 100px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            background-color: crimson;
+            box-shadow: 0px 0px 10px 0px;
+            text-align: center;
+        }
+        .btn:hover{
+            background-color: chocolate;
+        }
+        a{
+            text-decoration: none;
+            color: rgba(42, 249, 0, 0.655);
+        }
+        a:hover{
+            color: khaki;
+        }
+        .nuyu{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="bienvenue.html">
+    <fieldset>
+        <legend>LOG IN</legend>
+        <div class="nuyu">
+            <input type="text" placeholder="User names" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" maxlength="8" placeholder="Password" required><br><br><br>
+            <input type="submit" value="SUBMIT" class="btn"><br><br>
+            <div class="account">
+                <a href="signup.html"onclick="alert('ARE YOU SHURE YOU WANT TO CREATE  AN ACCOUNT ?')">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+      </fieldset>
+    </form>
+</body>
+</html>

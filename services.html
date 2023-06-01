@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./4.jfif">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <style>
+        body{
+            background-color:  rgb(15, 7, 7);
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li{
+            float: right;
+            background-color:  rgb(74, 33, 4);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            opacity: .8;
+            font-size: 20px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: orange;
+        }
+        ul li a:hover{
+            background-color: green;
+        }
+        ul li ul li{
+            text-decoration: none;
+            background-color: darkcyan;
+            
+        }
+        ul li ul li:hover{
+            background-color: grey;
+            color: gold;
+            color: crimson;
+        }
+        ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+img{
+    width: 150px;
+    border: 10px solid black;
+    display: block;
+}
+.dench{
+    
+    display: flex;
+    display: inline-block;
+}
+fieldset{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+button{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    background-color: khaki;   
+    border: none;
+}
+.info{
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    position: fixed;
+    box-shadow: 0px 0px 25px 0px green;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href=""><i class="fa-solid fa-users fa-bounce" style="color: #bb0a7a;"></i>ABOUT US</a>
+        <ul>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="media.html">SOCIAL MEDIA</a></li>
+            <li><a href="help.html">HELP ?</a></li>
+        </ul>
+        </li>
+        <li><a href=""><i class="fa-solid fa-door-open fa-beat" style="color: #bb0a7a;"></i>OUT DOOR</a>
+        <ul>
+            <li><a href="index.html">LOG OUT</a></li>
+        </ul>
+        </li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image fa-fade" style="color: #bb0a7a;"></i>GALLERY</a></li>
+        <li><a href="arts.html"><i class="fa-solid fa-palette fa-beat" style="color: #bb0a7a;"></i>ARTS</a></li>
+        <li><a href="bienvenue.html"><i class="fa-sharp fa-solid fa-house fa-beat" style="color: #bb0a7a;"></i>HOME</a></li>
+    </ul>
+    <div class="dench">
+        <img src="./LITERATURE.jfif" alt=""><fieldset>LITERATURE</fieldset>
+        <img src="./ACTING & DRAMA.jfif" alt=""><fieldset>ACTING & DRAMA</fieldset>
+        <img src="./CINEMATOGRAPHY & PHOTOGRAPHY.jfif" alt=""><fieldset>CINEMATOGRAPHY & PHOTOGRAPHY</fieldset>
+        <img src="./fashion.jfif" alt=""><fieldset>fashion</fieldset>
+        <img src="./MUSIC & DANCE.jfif" alt=""><fieldset>MUSIC & DANCE</fieldset>
+        <img src="PLASTIC ARTS.jfif" alt="" ><fieldset>PLASTIC ARTS</fieldset>
+        <section>
+            <div class="info">
+            <button>THIS WEB CAN BE USED BY ALL PEOPLE IN ALLL CATHEGORIES <br><br> AND HELP RWANDAN PEOPLE IN THEIR DEVELOPMENT AND <br><br> 
+                STRIKE WITH THEIR TALENTS ALL OVER THE WORLD</button>
+            <br><br><br><br>
+            <button>OTHERWISE IT CAN ALSO BE USE BY FOREIGNERS TO SATISFY <br><br>
+                 THEIR NEED AND GET INFORMATION ABOUT LEASURE,<br><br>FAMOUS PEOPLE ARTISTS EXPENCIVE DRAWINGS ...<br><br></button>
+        </div>
+        </body>
+</html>

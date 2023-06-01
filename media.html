@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./4.jfif">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+</head>
+<body>
+    
+</body>
+</html>
+<style>
+    body{
+        background-color: black;
+    } 
+    ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li{
+            float: right;
+            background-color:  rgb(74, 33, 4);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            opacity: .8;
+            font-size: 20px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: orange;
+        }
+        ul li a:hover{
+            background-color: green;
+        }
+        ul li ul li{
+            text-decoration: none;
+            background-color: darkcyan;
+            
+        }
+        ul li ul li:hover{
+            background-color: grey;
+            color: gold;
+            color: crimson;
+        }
+        ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+fieldset{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: none;
+    background: lightblue;
+    margin-left: 50px;
+}
+#gooba{
+    font-size: 50px;
+    margin-left: 20px;
+}
+.ch{
+    text-decoration: none;
+    font-size: 30px;
+}
+#ch{
+    font-size: 50px;
+}
+.location{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    background-color: aliceblue;
+    box-shadow: inset 0px 0px 45px 0px lightblue;
+    box-shadow: 0px 0px 40px 0px lightblue;
+    border-radius: 15px;
+}
+h2{
+    color: indigo;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href=""><i class="fa-solid fa-users fa-bounce" style="color: #bb0a7a;"></i>ABOUT US</a>
+        <ul>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="media.html">SOCIAL MEDIA</a></li>
+            <li><a href="help.html">HELP ?</a></li>
+        </ul>
+        </li>
+        <li><a href=""><i class="fa-solid fa-door-open fa-beat" style="color: #bb0a7a;"></i>OUT DOOR</a>
+        <ul>
+            <li><a href="index.html">LOG OUT</a></li>
+        </ul>
+        </li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image fa-fade" style="color: #bb0a7a;"></i>GALLERY</a></li>
+        <li><a href="arts.html"><i class="fa-solid fa-palette fa-beat" style="color: #bb0a7a;"></i>ARTS</a></li>
+        <li><a href="bienvenue.html"><i class="fa-sharp fa-solid fa-house fa-beat" style="color: #bb0a7a;"></i>HOME</a></li>
+    </ul>
+    <fieldset>
+        <a href="https:www.salax awards.com" class="ch"><p ><i class="fa-brands fa-facebook fa-bounce" style="color: #3a74d9;" id="gooba" id="ch"></i>SALAX AWARDS</p></a>
+        <a href="https:www.salax awards.com" class="ch"><p ><i class="fa-brands fa-instagram fa-beat" style="color: #ec186d;" id="gooba" id="ch"></i>SALAX__AWARDS</p></a>
+        <a href="https:www.salax awards.com" class="ch"><p ><i class="fa-brands fa-twitter fa-bounce" style="color: #236190;" id="gooba" id="ch"></i>SALAX AWARDS</p></a>
+        <a href="https:www.salax awards.com" class="ch"><p ><i class="fa-brands fa-tiktok fa-beat" style="color: #4e2659;" id="gooba" id="ch"></i>SALAX AWARDS</p></a>
+        <a href="https:www.salax awards.com" class="ch"><p ><i class="fa-solid fa-phone fa-shake" style="color: #0cbb2f;" id="gooba" id="ch"></i>+250 788 7899 789</p></a>
+        <a href="https:www.salax awards.com" class="ch"><p ><i class="fa-solid fa-globe fa-flip" style="color: #3b77de;" id="gooba" id="ch"></i>WWW.SALAX AWARDS.COM</p></a>
+    </fieldset>
+    <fieldset class="location">
+        <h2><u><i>OUR LOCATION</i></u></h2>
+       <p><i class="fa-solid fa-location fa-flip" style="color: blue;"></i>Western Rwanda , Rubavu District </p><br>
+       <p><i class="fa-solid fa-envelope fa-bounce" style="color: chartreuse;"></i>salaxawards999@gmail.com <br></p><br>
+       <label for="">RATE US:</label><br>
+        <i class="fa-solid fa-star fa-bounce" style="color: orangered;"></i>
+        <i class="fa-solid fa-star fa-bounce" style="color: orangered;"></i>
+        <i class="fa-solid fa-star fa-bounce" style="color: orangered;"></i>
+        <i class="fa-solid fa-star fa-bounce" style="color: orangered;"></i>
+        <i class="fa-solid fa-star-half fa-bounce" style="color: orangered;"></i>
+        <input type="checkbox" name="" id="" onclick="alert('Thank You For Rating Our Web')">
+    </fieldset>
+</body>

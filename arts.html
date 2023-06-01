@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Artist Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+  <link rel="icon" href="./4.jfif">
+</head>
+<h1>ADD YOUR ART</h1>
+<body>
+  <ul>
+    <li><a href=""><i class="fa-solid fa-users fa-bounce" style="color: #bb0a7a;"></i>ABOUT US</a>
+    <ul>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="media.html">SOCIAL MEDIA</a></li>
+        <li><a href="help.html">HELP ?</a></li>
+    </ul>
+    </li>
+    <li><a href=""><i class="fa-solid fa-door-open fa-beat" style="color: #bb0a7a;"></i>OUT DOOR</a>
+    <ul>
+        <li><a href="index.html">LOG OUT</a></li>
+    </ul>
+    </li>
+    <li><a href="gallery.html"><i class="fa-solid fa-image fa-fade" style="color: #bb0a7a;"></i>GALLERY</a></li>
+    <li><a href="arts.html" id="arts"><i class="fa-solid fa-palette fa-beat" style="color: #bb0a7a;"></i>ARTS</a></li>
+    <li><a href="bienvenue.html"><i class="fa-sharp fa-solid fa-house fa-beat" style="color: #bb0a7a;"></i>HOME</a></li>
+</ul>
+  <div class="container">
+    <img src="./user.svg" width="200px" height="250px" id="prisonerPhoto">
+    <i class="fa-solid fa-arrow-left fa-bounce" style="color: #f4be2a;" id="huhu">click here</i>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="crime">Art Type:</label>
+      <input type="text" id="crime" name="crime" required>
+
+      <label for="sentence">Category:</label>
+      <input type="text" id="sentence" name="sentence" required>
+
+      <label for="date">Date of Register:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="officer">Email:</label>
+      <input type="email" id="officer" name="officer" required>
+
+      <input type="submit" value="SUBMIT" class="ok"
+       onclick="alert('THANK YOU FOR ADDING YOUR ART YOU WILL GET A CONFIRMATION MESSAGE AFTER 10 DAYS IF YOU ARE CLASSIFIED')">
+    </form>
+  </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ARTISTS</title>
+  <style>
+    body{
+      background-color: lightgreen;
+    }
+    #arts{
+    background: wheat;
+    
+}
+
+    ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li{
+            float: right;
+            background-color:  rgb(74, 33, 4);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            opacity: .8;
+            font-size: 20px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: orange;
+        }
+        ul li a:hover{
+            background-color: green;
+        }
+        ul li ul li{
+            text-decoration: none;
+            background-color: darkcyan;
+            
+        }
+        ul li ul li:hover{
+            background-color: grey;
+            color: gold;
+            color: crimson;
+        }
+        ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+} 
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #f2f2f2;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: darkcyan;
+      color: gold;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    img {
+      object-fit: contain;
+    }
+    input{
+      border: 1px solid grey;
+      border-radius: 0px;
+      outline: none;
+      padding: 4PX;
+
+    }
+    .ok{
+      color: aliceblue;
+      background-color: rgb(63, 61, 61);
+      position: fixed;
+      transform: translate(-40%,-40%);
+      left: 50%;
+      top: 59%;
+      box-shadow: 0px 0px 25px 0px crimson ;
+    }
+    .ok:hover{
+      transform: scale(1.4);
+      cursor: pointer;
+      background-color: rgb(63, 61, 61);
+      color: aliceblue;
+      border: none;
+      box-shadow: 0px 0px 25px 0px crimson  ;
+    }
+    label{
+      color: green;
+    }
+    h1{
+      color: green;
+    }
+    #huhu{
+      font-size: 30px ;
+      top: 30%;
+      left: 13%;
+      transform: translate(-50%,-50%);
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>List of Arts</h1>
+  <table>
+    <tr>
+      <th>Artist Number</th>
+      <th>Name</th>
+      <th>Art Type</th>
+      <th>Category</th>
+      <th>Picture</th>
+    </tr>
+  </table>
+  <input type="file" id="file" style="display: none;">
+  <script>
+    const form = document.querySelector('form');
+    const prisonerPhoto = document.querySelector('#prisonerPhoto');
+    const file = document.querySelector('#file');
+    const table = document.querySelector('table');
+    let index = 0
+    prisonerPhoto.onclick = () => {
+      file.click()
+    }
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // prevent the form from submitting normally
+
+      // get the values of the form inputs
+      const name = document.querySelector('#name').value;
+      const age = document.querySelector('#age').value;
+      const crime = document.querySelector('#crime').value;
+      const sentence = document.querySelector('#sentence').value;
+      const date = document.querySelector('#date').value;
+      const officer = document.querySelector('#officer').value;
+      index++
+      if (index < 10) {
+        index = `00${index}`
+      }
+      if (index < 100 && index > 10) {
+        index = `0${index}`
+
+      }
+      // create a new row in the table with the form input values
+      const row = table.insertRow(-1);
+      row.innerHTML = `
+          <td>${index}</td>
+          <td>${name}</td>
+          <td>${crime}</td>
+          <td>${sentence}</td>
+          <td><img src="${prisonerPhoto.src}" height="100"></td>
+        `;
+
+      // clear the form inputs for the next entry
+      form.reset();
+      prisonerPhoto.src = '../images/abstract-user-flat-1.svg'
+    });
+
+    file.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const contents = event.target.result;
+        prisonerPhoto.src = contents
+      };
+
+      reader.readAsDataURL(file);
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="icon" href="./4.jfif">
+    <style>
+        body{
+            background-color:  rgb(15,7,7);
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li{
+            float: right;
+            background-color:  rgb(74, 33, 4);
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            opacity: .8;
+            font-size: 20px;
+            text-align: center;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            color: orange;
+        }
+        ul li a:hover{
+            background-color: green;
+        }
+        ul li ul li{
+            text-decoration: none;
+            background-color: darkcyan;
+            
+        }
+        ul li ul li:hover{
+            background-color: grey;
+            color: gold;
+            color: crimson;
+        }
+        ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+button{
+    margin-left: 110px;
+    margin-top: 1px;
+
+}
+.host{
+
+    margin-left: 580px;
+    margin-top: 150px;
+    width: 290px;
+    transition: 0.8s;
+}
+.host:hover{
+    transform: scale(1.1);
+    opacity: .7;
+}
+
+.judge{
+     width: 290px; 
+    display: flex;
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 30px;
+    text-align: center;
+    transition: 0.8s;
+}
+.judge:hover{
+    transform: scale(1.1);
+    opacity: .7;
+}
+button{
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(74, 33, 4);
+    color: orange;
+    border: none;
+
+
+}
+button:hover{
+    background-color: green;
+    opacity: .5;
+    color: white;
+}
+#bie{
+    background: wheat;
+    
+}
+#meet{
+    position: absolute;
+    top: 25%;
+    left: 36%;
+}
+#our{
+    position: absolute;
+    top: 90%;
+    left: 36%;
+}
+.logo{
+    margin-left: 5%;
+    margin-top: 150px;
+    width: 200px;
+    height: 200px;
+    transition: 0.8s;
+    border-radius: 50%;
+}
+h1{
+    color: gold;
+}
+fieldset{
+    width: 100px;
+    /* border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px; */
+}
+footer{
+    transform: translate(-50%,-50%);
+    top: 190%;
+    margin-left: 49.5%;
+    position: absolute;
+    background-color: lightblue;
+    width: 1500px;
+    box-shadow: 0px 0px 15px 0px crimson;
+}
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 30px;
+}
+footer p{
+    color: crimson;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.part{
+    width: 120px;
+    display: flex;
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 30px;
+    text-align: center;
+    transition: 0.8s;
+    margin-left: 300px;
+    margin-top: 45px;
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>COMPETION OF ARTIST</h1>
+    <ul>
+        <li><a href=""><i class="fa-solid fa-users fa-bounce" style="color: #bb0a7a;"></i>ABOUT US</a>
+        <ul>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="media.html">SOCIAL MEDIA</a></li>
+            <li><a href="help.html">HELP ?</a></li>
+        </ul>
+        </li>
+        <li><a href=""><i class="fa-solid fa-door-open fa-beat" style="color: #bb0a7a;"></i>OUT DOOR</a>
+        <ul>
+            <li><a href="index.html">LOG OUT</a></li>
+        </ul>
+        </li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image fa-fade" style="color: #bb0a7a;"></i>GALLERY</a></li>
+        <li><a href="arts.html"><i class="fa-solid fa-palette fa-beat" style="color: #bb0a7a;"></i>ARTS</a></li>
+        <li><a href="bienvenue.html" id="bie"><i class="fa-sharp fa-solid fa-house fa-beat" style="color: #bb0a7a;"></i>HOME</a></li>
+    </ul>
+    <br><br><br><br><br>
+    <button id="meet">MEET OUR HOST</button>
+                <img src="./lucky.jfif" alt="" class="host"><BR></BR><BR></BR><BR></BR>
+                <button id="our">MEET OUR JUDGES</button><BR></BR><BR></BR><BR></BR>
+            <img src="./emery.jfif" alt="" class="judge">
+            <img src="./kennedy.jfif" alt="" class="judge">
+            <img src="martin.jfif" alt="" class="judge">
+            <img src="rwe.jfif" alt="" class="judge">
+            <img src="lau.jfif" alt="" class="judge">
+    </section>
+<H3>PARTENERS</H3>
+    <img src="bnr.jfif" alt="" class="part">
+    <img src="imbuto.jfif" alt="" class="part">
+    <img src="koica.jfif" alt="" class="part">
+</fieldset>
+    <footer>
+        <p>SALAX AWARDS</p>
+        <p>We Are All Over All Website visit us:</p>
+        <a href="https:www.salax awards.com"><i class="fa-brands fa-facebook fa-bounce" style="color: #3a74d9;" id="gooba" id="ch"></i>SALAX AWARDS</a>
+        <a href="https:www.salax awards.com"><i class="fa-brands fa-instagram fa-beat" style="color: #ec186d;" id="gooba" id="ch"></i>SALAX AWARDS</a>
+        <a href="https:www.salax awards.com"><i class="fa-brands fa-twitter fa-bounce" style="color: #236190;" id="gooba" id="ch"></i>SALAX AWARDS</a>
+        <a href="https:www.salax awards.com"><i class="fa-brands fa-tiktok fa-beat" style="color: #4e2659;" id="gooba" id="ch"></i>SALAX AWARDS</a>
+        <a href="https:www.salax awards.com"><i class="fa-solid fa-phone fa-shake" style="color: #0cbb2f;" id="gooba" id="ch"></i>+250 788 7899 789</a>
+        <a href="https:www.salax awards.com"><i class="fa-solid fa-globe fa-flip" style="color: #3b77de;" id="gooba" id="ch"></i>SALAX AWARDS</a>
+    </footer>
+</body>
+</html>
